@@ -3,18 +3,15 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-storage',
   templateUrl: './storage.component.html',
-  styleUrls: ['./storage.component.scss']
+  styleUrls: ['./storage.component.scss'],
 })
 export class StorageComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit(): void {}
+  title: string;
+  add() {
+    this.title = 'this is local storage ';
+    localStorage.setItem('token', this.title);
   }
-  title:string
-  add(){
-    this.title="this is local storage ";
-    localStorage.setItem("token",this.title)
-  }
-
 }

@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { TranslateModule } from '@ngx-translate/core';
@@ -39,8 +39,7 @@ import { TdfComponent } from './tdf/tdf.component';
 import { StorageComponent } from './storage/storage.component';
 import { HeaderComponent } from './header/header.component';
 import { UiscreenComponent } from './uiscreen/uiscreen.component';
-
-
+import { SaitejaAuGuard } from './saiteja-au.guard';
 
 @NgModule({
   imports: [
@@ -84,7 +83,7 @@ import { UiscreenComponent } from './uiscreen/uiscreen.component';
     HeaderComponent,
     UiscreenComponent,
   ],
-  providers: [UsersService],
+  providers: [UsersService, SaitejaAuGuard],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

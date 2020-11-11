@@ -1,7 +1,11 @@
-<form [formGroup]="loginfrm"(ngsubmit)="checkuser()">
-    userame:<input type="text" id="uname" name="uname" formcontrolname="uname">
-    password:<input type="password" id="pwd" name="pwd" formcontrolname="pwd">
-    <div>
-        <button type="submit">login</button>
-    </div>
+<form [formGroup]="loginfrm" (ngsubmit)="checkuser()">
+  userame:<input type="text" id="uname" name="uname" formcontrolname="uname" /> password:<input
+    type="password"
+    id="pwd"
+    name="pwd"
+    formcontrolname="pwd"
+  />
+  <div>
+    <button type="submit">login</button>
+  </div>
 </form>

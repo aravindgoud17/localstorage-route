@@ -1,16 +1,14 @@
 <ion-content>
-
   <form [formGroup]="loginfrm" (ngSubmit)="CheckUser()">
-   <label> usernmae:
-    <input type="text" name="username" formControlName="username">
-</label><br>
+    <label>
+      usernmae:
+      <input type="text" name="username" formControlName="username" /> </label
+    ><br />
 
-<label>  password:<input type="password" formControlName="password">
-    </label><br>
+    <label> password:<input type="password" formControlName="password" /> </label><br />
     <div>
       <button type="submit">login</button>
     </div>
     <!-- <div *ngif="usernmae.errors.required">first name is required</div> -->
   </form>
-
 </ion-content>

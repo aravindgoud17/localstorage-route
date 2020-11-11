@@ -1,23 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-import {FormGroup,FormControl} from '@angular/forms'
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
   loginfrm = new FormGroup({
-    uname : new FormControl(),
-    pwd : new FormControl()
-  })
-  checkuser(){
+    uname: new FormControl(),
+    pwd: new FormControl(),
+  });
+  checkuser() {
     alert();
   }
-
 }

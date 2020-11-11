@@ -1,25 +1,25 @@
 <!-- <app-header></app-header> -->
-  <ion-content>
-      <div>
-        <h1>hii {{ result }}</h1>
-        <label>
-            Name:
-            <input type="text" [(ngModel)]="ggg" [formControl]="name">
-          </label>
+<ion-content>
+  <div>
+    <h1>hii {{ result }}</h1>
+    <label>
+      Name:
+      <input type="text" [(ngModel)]="ggg" [formControl]="name" />
+    </label>
 
-          <label>
-            email:
-            <input type="email" [formControl]="email">
-          </label>
-        
-          <!-- 2 -->
-          <p>
-            <!-- hiii{{ name.value }} -->
-          </p>
-        
-          <!-- 3 -->
-          <p>
-            <button (click)="clear()">clear</button>
-          </p>
-      </div>
-  </ion-content>
+    <label>
+      email:
+      <input type="email" [formControl]="email" />
+    </label>
+
+    <!-- 2 -->
+    <p>
+      <!-- hiii{{ name.value }} -->
+    </p>
+
+    <!-- 3 -->
+    <p>
+      <button (click)="clear()">clear</button>
+    </p>
+  </div>
+</ion-content>

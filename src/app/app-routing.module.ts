@@ -24,6 +24,7 @@ import { TdfComponent } from './tdf/tdf.component';
 import { StorageComponent } from './storage/storage.component';
 import { HeaderComponent } from './header/header.component';
 import { UiscreenComponent } from './uiscreen/uiscreen.component';
+import { SaitejaAuGuard } from './saiteja-au.guard';
 
 const routes: Routes = [
   { path: 'api', component: ApidataComponent },
@@ -42,7 +43,7 @@ const routes: Routes = [
   { path: 'signin', component: SigninComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'profile', component: ProfileComponent },
+  { path: 'profile', component: ProfileComponent, canActivate: [SaitejaAuGuard] },
   { path: 'form2', component: Form2Component },
   { path: 'tdf', component: TdfComponent },
   { path: 'storage', component: StorageComponent },
